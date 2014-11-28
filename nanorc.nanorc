@@ -1,16 +1,26 @@
-## Here is an example for nanorc files.
+## Author: Vidur Murali
+## Date  : 11/27/2014
 ##
+## Based on Spacegray Eighties Palette
+## Link: https://github.com/vyder/color-palettes/blob/master/Spacegray%20Eighties.clr
+##
+## Notes for future me:
+## > 'icolor' is the same as 'color', except
+##   it uses cases-insensitive matching
+
 syntax "nanorc" "\.?nanorc$"
-## Possible errors and parameters
-icolor brightwhite "^[[:space:]]*((un)?set|include|syntax|i?color).*$"
+
 ## Keywords
-icolor brightgreen "^[[:space:]]*(set|unset)[[:space:]]+(autoindent|backup|backupdir|backwards|boldtext|brackets|casesensitive|const|cut|fill|historylog|matchbrackets|morespace|mouse|multibuffer|noconvert|nofollow|nohelp|nonewlines|nowrap|operatingdir|preserve|punct)\>" "^[[:space:]]*(set|unset)[[:space:]]+(quickblank|quotestr|rebinddelete|rebindkeypad|regexp|smarthome|smooth|speller|suspend|tabsize|tabstospaces|tempfile|view|whitespace|wordbounds)\>"
-icolor green "^[[:space:]]*(set|unset|include|syntax)\>"
+icolor red "((un)?set|include|syntax|i?color)"
+
+## Options
+icolor blue "(autoindent|backup|backupdir|backwards|boldtext|brackets|casesensitive|const|cut|fill|historylog|matchbrackets|morespace|mouse|multibuffer|noconvert|nofollow|nohelp|nonewlines|nowrap|operatingdir|preserve|punct|quickblank|quotestr|rebinddelete|rebindkeypad|regexp|smarthome|smooth|speller|suspend|tabsize|tabstospaces|tempfile|view|whitespace|wordbounds)"
+
 ## Colors
-icolor yellow "^[[:space:]]*i?color[[:space:]]*(bright)?(white|black|red|blue|green|yellow|magenta|cyan)?(,(white|black|red|blue|green|yellow|magenta|cyan))?\>"
-icolor magenta "^[[:space:]]*i?color\>" "\<(start|end)="
+icolor yellow "(bright)?(white|black|red|blue|green|yellow|magenta|cyan)"
+
 ## Strings
-icolor white ""(\\.|[^"])*""
+icolor green ""(\\.|[^"])*""
+
 ## Comments
-icolor brightblue "^[[:space:]]*#.*$"
-icolor cyan "^[[:space:]]*##.*$"
+icolor black "^[[:space:]]*#.*$"
