@@ -26,11 +26,14 @@ color red "[[:<:]][-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?)
 ## Floating point number with at least one digit before decimal point
 color red "[[:<:]][-+]?([0-9]+\.[0-9]*|[0-9]*\.[0-9]+)([EePp][+-]?[0-9]+)?[fFlL]?"
 color red "[[:<:]][-+]?([0-9]+[EePp][+-]?[0-9]+)[fFlL]?"
+## Boolean
+color red "[[:<:]](true|false)[[:>:]]"
 
 ## Type specifiers
 color yellow "[[:<:]](Array|Boolean|Date|Enumerator|Error|Function|Math)[[:>:]]"
 color yellow "[[:<:]](Number|Object|RegExp|String)[[:>:]]"
-color yellow "[[:<:]](true|false)[[:>:]]"
+## Prototypes
+color yellow "[[:<:]][A-Z]+[0-9A-Z_a-z]*[[:>:]]"
 
 ## Regular expressions
 color green "/([^/]|(\\/))*/[iomx]*" "%r\{([^}]|(\\}))*\}[iomx]*"
