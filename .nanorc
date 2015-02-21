@@ -10,6 +10,9 @@ include "~/.nano/html.nanorc"
 ## Java
 include "~/.nano/java.nanorc"
 
+## JavaScript
+include "~/.nano/javascript.nanorc"
+
 ## Man
 include "~/.nano/man.nanorc"
 
