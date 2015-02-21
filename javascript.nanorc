@@ -18,6 +18,8 @@ color blue "[[:<:]](switch|this|throw|try|typeof)[[:>:]]"
 color blue "[[:<:]](undefined|var|void|while|with)[[:>:]]"
 ## Node Keywords
 color blue "[[:<:]](require)[[:>:]]"
+## Special standout keywords
+color magenta "[[:<:]](console|log|function|new|return)[[:>:]]"
 
 ## Decimal, cotal and hexadecimal numbers
 color red "[[:<:]][-+]?([1-9][0-9]*|0[0-7]*|0x[0-9a-fA-F]+)([uU][lL]?|[lL][uU]?)?[[:>:]]"
