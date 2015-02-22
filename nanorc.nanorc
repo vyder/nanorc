@@ -20,7 +20,9 @@ icolor blue "(autoindent|backup|backupdir|backwards|boldtext|brackets|casesensit
 icolor yellow "(bright)?(white|black|red|blue|green|yellow|magenta|cyan)"
 
 ## Strings
-icolor green ""(\\.|[^"])*""
+icolor green "\"(\\.|[^\"])*\""
+## Escapes
+color red "\\[0-7][0-7]?[0-7]?|\\x[0-9a-fA-F]+|\\[bfnrt'\"\?\\]"
 
 ## Comments
 icolor black "^[[:space:]]*#.*$"
