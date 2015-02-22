@@ -1,6 +1,24 @@
-# Nice
+# Editor config
+
 set tabsize 4
 set tabstospaces
+
+## Search using regex
+set regexp
+
+## Use mouse to select cursor position
+## Double left-click to select text
+set mouse
+
+## Scroll line-by-line
+set smooth
+
+## Show cursor position in status bar
+set const
+
+## Handy link to documentation:
+## http://www.nano-editor.org/dist/v2.2/nano.1.html
+
 
 # Syntax Highlighters
 
