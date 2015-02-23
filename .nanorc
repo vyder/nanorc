@@ -8,7 +8,8 @@ set regexp
 
 ## Use mouse to select cursor position
 ## Double left-click to select text
-set mouse
+## !!! Don't enable this shit. So goddamn frustrating.
+# set mouse
 
 ## Scroll line-by-line
 set smooth
